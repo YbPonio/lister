@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="prevBtn">
+        <button onclick="buttonFruit('prev')">Previous</button>
+      </div>
+
+      <div class="search">
+        <form id="searchInput" method="dialog" onsubmit="searchFlags()">
+          <input id="searchInputId" list="countryList" placeholder="Enter Country" />
+          <button type="submit">Search</button>
+        </form>
+        <datalist id="countryList">
+        </datalist>
+      </div>
+
+      <div class="container">
+        <img id="image-container" src="" alt="fruit" />
+      </div>
+
+      <div class="infoContainer">
+        <h1 id="countryName">fruit</h1>
+        <h2 id="countryCode">Ph</h2>
+      </div>
+
+      <div class="nextBtn">
+        <button onclick="buttonFruit('next')">Next</button>
+      </div>
+    </main>
+  </body>
+
+  <script src="main.js" defer></script>
+</html>
